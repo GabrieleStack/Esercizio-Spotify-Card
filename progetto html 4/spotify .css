@@ -1,0 +1,113 @@
+body{
+    background-color: black;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+.spotifycard{
+height: 300px;
+width: 300px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border: 1px solid darkslategray;
+background-image: url(OIP.jpeg);
+background-size: cover;
+background-position: 100%;
+border-radius: 15px;
+box-shadow: 5px 10px 10px darkslategray;
+overflow: hidden;
+}
+
+.spotifycard:hover{
+    transform: translate(-35%,-30%);scale: 1.5;
+    transition: 0.5s ease
+}
+
+
+.spotifycard:hover.info{
+    top: 500px;
+}
+
+
+
+
+.info{
+    color: white;
+    position: absolute;
+    text-align: center;
+    left: 5%;
+    top: 215px;
+    transform: translate(-50,0);
+    max-width: 270px;
+}
+    
+
+.artist{
+    font-weight: 900;
+    font-size: larger;
+}
+
+.album{
+    font-size: medium;
+    margin-top: 0px;
+}
+
+.song{
+    font-size: larger;
+    font-weight: 900;
+    margin-top: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.cardoverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom,transparent, black);
+    border-radius: 15px ;
+}
+
+.button{
+position: absolute;
+bottom: 0;
+left: -2cm;
+transition: 0.5s ease;
+}
+
+.spotifycard:hover .button{
+left: 0px;
+}
+
+.playbutton{
+display: inline-block;
+position: relative;
+height: 1cm;
+width: 1cm;
+background-color: yellowgreen;
+color: black;
+border-radius: 50%;
+line-height: 0%;
+user
+
+}
+
+.playbutton::before {
+content: "";
+position: absolute;
+top: 24%;
+left: 30%;
+width: 0;
+height: 0;
+border-left: 20px solid black;
+border-top: 10px solid transparent;
+border-bottom: 10px solid transparent;
+}
+
